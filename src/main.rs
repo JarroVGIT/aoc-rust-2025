@@ -70,7 +70,7 @@ mod args {
             },
             Some("solve") => AppArguments::Solve {
                 day: args.free_from_str()?,
-                release: args.contains("--release"),
+                release: true,
                 submit: args.opt_value_from_str("--submit")?,
                 dhat: args.contains("--dhat"),
             },
